@@ -1,0 +1,37 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Subrayada:700);
+
+
+a, headline { font-size: 3em;
+		color: #ffffff;
+		vertical-align:middle;
+		}
+		
+a, .text-logo {
+	font-family: 'Montserrat Subrayada', sans-serif;
+}
+		
+.mountains {
+	background-image: 'imgs/mountain_sun.png', center;
+}
+
+.orangeback {
+	background-color: #ff8d00;
+}
+
+
+/*
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  }
+*/
+  
+.centerHero{
+    width:640px;
+    height:480px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin:-240px 0 0 -320px;
+}
