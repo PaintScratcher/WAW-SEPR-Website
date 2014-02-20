@@ -1,15 +1,254 @@
-<html>
-	<head>
-		<link href='http://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<title>Team WAW</title>
-	</head>
-	<body>
-		<center>
-			<h1>TEAM WAW</h1>
-			<p>Welcome to teamwaw</p>
-			<a href="/turbulence">Turbulence</a>  |  <a href="/flighty">Flighty Mk2</a><br>
-			<a href="/turbulence">(Assessment 2)</a>  |  <a href="/flighty">(Assessment 3)</a>
-		</center>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="docs-assets/ico/favicon.png">
+
+    <title>World of Flighty</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="dist/css/carousel.css" rel="stylesheet">
+    <link href="assets/css/slider/extra.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR (Black title bar)
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand text-logo" href="#">World of Flighty</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="screenshots/index.html">Screenshots</a></li>
+                <li><a href="faq/index.html">FAQ</a></li>
+                <li><a href="doc/index.html">JavaDoc</a></li>
+				<li><a href="https://github.com/PaintScratcher/WAW-SEPR-Flighty">Git Repo</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+	            <li class="dropdown download">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Download It<b class="caret cwhite"></b></a>
+                  <ul class="dropdown-menu">
+					  <li class="dropdown-header">Download the Source Code</li>
+                  	  <li><a href="https://github.com/PaintScratcher/WAW-SEPR-Flighty/archive/master.zip">Source Code (.zip)</a></li> 
+	                  <li class="divider"></li>
+                      <li class="dropdown-header">Get the game</li>
+					  <li><a href="files/WorldOfFlighty.jar">Windows/Linux/Mac (.jar)</a></li>
+					  <li class="divider"></li>
+					  <li class="dropdown-header">Download the User Manual</li>
+					  <li><a href="files/UserManual.pdf">User Manual (.pdf)</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel (Rotating headlines/images/video)
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="assets/img/titles/map3.png" alt="First Slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Brand New</h1>
+              <p>We've pushed Flighty to it's limits, adding exciting new features such as landing and scoring!</p>
+              <p><a class="btn btn-lg btn-primary" href="files/WorldOfFlighty.jar" role="button">Play now!</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/img/titles/map1.png" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Retro & Robust</h1>
+              <p>Tested to the max, because your worth it!</p>
+              <p><a class="btn btn-lg btn-primary" href="https://github.com/PaintScratcher/WAW-SEPR-Flighty" role="button">Give it a go!</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/img/titles/finalCloudBackground.png" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Flexible</h1>
+              <p>Re-factored and well documented code makes extending World of Flighty any developers dream!</p>
+              <p><a class="btn btn-lg btn-primary" href="https://github.com/PaintScratcher/WAW-SEPR-Flighty" role="button">See for yourself!</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div> <!-- /.carousel -->
+
+
+
+    <!-- General body/advertising
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+<!--           <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image"> -->
+          <img src="assets/img/elements/plane-sub.png" height=140px width=140px alt="Plane">
+          <h2>Flight School</h2>
+          <p>Controlling planes in the game couldn't be any easier for users, already-implemented point-and-click functionality works alongside manual keyboard control, providing the user with the method optimal for them. The implementation of multiple control methods means a solid foundation to adapt Flighty to use any interface that you could possibly dream of using.</p>
+<!--           <p><a class="btn btn-default" href="design/gui.html" role="button">More info &raquo;</a></p> -->
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="assets/img/elements/waypoint-sub.png" height=140px width=140px alt="Waypoint">
+          <h2>Express Route to Fun</h2>
+          <p>Multiple levels, difficulty ratings, and aircraft provide a strong base for expansion to a game that will provide hours of fun for a variety of gamers.</p>
+<!--           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="assets/img/elements/plane-alert.png" alt="Collision warning">
+          <h2>Collision-free since '93</h2>
+          <p>Flighty has been tested, debugged, and tested again through a combination unit-testing and automated-testing to ensure only stable ready-to-use code remains. Supermodel-slim code ensures optimal performance and resource usage.</p>
+          <p><a class="btn btn-default" href="implementation/testing.html" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+      
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Distinctive graphics. <span class="text-muted">8-bit retro styling from 37000 feet.</span></h2>
+          <p class="lead">Flighty has been designed to be as pleasurable to the eye as it is to play. The use of generic tesselating elements means easy expansion to procedurally generated landscapes.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="assets/img/elements/map-preview.png" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      
+	<!-- Cycling code screenshots follow. Recommended that you simply swap in 500x500 pngs -->
+      <div class="row featurette">
+        <div class="col-md-5">
+	        <div id="content-slider">
+		    	<div id="slider">
+		        	<div id="mask">
+		            <ul>
+		           	<li id="first" class="firstanimation">
+		            <a href="#">
+		            <img src="assets/img/elements/java/java-1.png" alt="Cougar"/>
+		            </a>
+		            <div class="tooltip">
+		            <h1>Code</h1>
+		            </div>
+		            </li>
+		
+		            <li id="second" class="secondanimation">
+		            <a href="#">
+		            <img src="assets/img/elements/java/java-2.png" alt="Lions"/>
+		            </a>
+		            <div class="tooltip">
+		            <h1>More code</h1>
+		            </div>
+		            </li>
+		            
+		            <li id="third" class="thirdanimation">
+		            <a href="#">
+		            <img src="assets/img/elements/java/java-3.png" alt="Snowalker"/>
+		            </a>
+		            <div class="tooltip">
+		            <h1>Even more code</h1>
+		            </div>
+		            </li>
+		                        
+		            <li id="fourth" class="fourthanimation">
+		            <a href="#">
+		            <img src="assets/img/elements/java/java-4.png" alt="Howling"/>
+		            </a>
+		            <div class="tooltip">
+		            <h1>Some more code</h1>
+		            </div>
+		            </li>
+		                        
+		            <li id="fifth" class="fifthanimation">
+		            <a href="#">
+		            <img src="assets/img/elements/java/java-5.png" alt="Sunbathing"/>
+		            </a>
+		            <div class="tooltip">
+		            <h1>THE MOST CODE EVER</h1>
+		            </div>
+		            </li>
+		            </ul>
+		            </div>
+		            <div class="progress-bar"></div>
+		        </div>
+		    </div>		    			
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Black, two sugars. <span class="text-muted">Java goodness ready to take forward.</span></h2>
+          <p class="lead">Java environment mean a game easily seasoned to your personal tastes and preferences through libraries and more, and the largest possible potential user-base for Flighty.</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2014 Team WAW. &middot; <a href="http://www.teamwaw.co.uk">teamwaw.co.uk</a> <!-- &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a> --></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="docs-assets/js/holder.js"></script>
+  </body>
 </html>
