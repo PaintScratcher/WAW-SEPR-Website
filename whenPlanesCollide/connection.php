@@ -13,10 +13,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET'){ //RETRIEVE SCORES
 	$result = $mysqli->query($query) or die($mysqli->error.__LINE__);
 
 	// keeps getting the next row until there are no more to get
-	while($row = mysql_fetch_array( $result )) {
+	if($result->num_rows > 0) {
+		while($row = $result->fetch_assoc()) {
 		// Print out the contents of each row
 		echo $row['Name'].":".$row['Score']."\n";
-	} 
+		}
+	}
 }
 elseif($_SERVER['REQUEST_METHOD'] == 'POST'){ //SET HIGHSCORE
 	
@@ -25,4 +27,5 @@ else{
 	echo "Oops, something went wrong!";
 }
 
+mysqli_close($mysqli);
 ?>
