@@ -1,6 +1,4 @@
-<html>
 <?php
 
 echo "Hello, this is server";
 ?>
-</html>
