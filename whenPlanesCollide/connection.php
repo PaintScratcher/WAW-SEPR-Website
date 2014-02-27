@@ -6,7 +6,6 @@ $scores = array(
     Jim => 90,
 );
 foreach ($scores as $key => $value) {
-    echo $key."\n";
-	echo $value."\n";
+    echo $key.":".$value;
 }
 ?>
