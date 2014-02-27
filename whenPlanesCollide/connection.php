@@ -1,15 +1,28 @@
 <?php
 
 // Make a MySQL Connection
-mysql_connect("localhost", "www-data", "www-datapw") or die(mysql_error());
-mysql_select_db("teamwaw") or die(mysql_error());
+$db = new mysqli('localhost', 'www-data', 'www-datapw', 'teamwaw');
+if($db->connect_errno > 0){
+    die('Unable to connect to database [' . $db->connect_error . ']');
+}
 
-// Get all the data from the "example" table
-$result = mysql_query("SELECT * FROM  `HighScores` ORDER BY  `HighScores`.`Score` DESC LIMIT 10") or die(mysql_error());  
+if ($_SERVER['REQUEST_METHOD'] == 'GET'){ //RETRIEVE SCORES
 
-// keeps getting the next row until there are no more to get
-while($row = mysql_fetch_array( $result )) {
-	// Print out the contents of each row into a table
-	echo $row['Name'].":".$row['Score']."\n";
-} 
+	// Select the top 10 scores
+	$query = "SELECT * FROM  `HighScores` ORDER BY  `HighScores`.`Score` DESC LIMIT 10";
+	$result = $mysqli->query($query) or die($mysqli->error.__LINE__);
+
+	// keeps getting the next row until there are no more to get
+	while($row = mysql_fetch_array( $result )) {
+		// Print out the contents of each row
+		echo $row['Name'].":".$row['Score']."\n";
+	} 
+}
+elseif($_SERVER['REQUEST_METHOD'] == 'POST'){ //SET HIGHSCORE
+	
+}
+else{
+	echo "Oops, something went wrong!";
+}
+
 ?>
