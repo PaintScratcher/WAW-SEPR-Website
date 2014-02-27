@@ -1,9 +1,9 @@
 <?php
 
 // Make a MySQL Connection
-$db = new mysqli('localhost', 'www-data', 'www-datapw', 'teamwaw');
-if($db->connect_errno > 0){
-    die('Unable to connect to database [' . $db->connect_error . ']');
+$mysqli = new mysqli('localhost', 'www-data', 'www-datapw', 'teamwaw');
+if($mysqli->connect_errno > 0){
+    die('Unable to connect to database [' . $mysqli->connect_error . ']');
 }
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET'){ //RETRIEVE SCORES
