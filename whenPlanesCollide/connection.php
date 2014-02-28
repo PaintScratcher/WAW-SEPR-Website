@@ -9,7 +9,7 @@ if($mysqli->connect_errno > 0){
 if ($_SERVER['REQUEST_METHOD'] == 'GET'){ //RETRIEVE SCORES
 
 	// Select the top 10 scores
-	$query = "SELECT * FROM  `HighScores` ORDER BY  `HighScores`.`Score` ASC LIMIT 10";
+	$query = "SELECT * FROM  `HighScores` ORDER BY  `HighScores`.`Score` DESC LIMIT 10";
 	$result = $mysqli->query($query) or die($mysqli->error.__LINE__);
 
 	// keeps getting the next row until there are no more to get
