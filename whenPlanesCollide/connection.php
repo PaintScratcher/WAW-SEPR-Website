@@ -25,7 +25,7 @@ elseif($_SERVER['REQUEST_METHOD'] == 'POST'){ //SET HIGHSCORE
 	$stmt->bind_param('ss', $_POST['name'], $_POST['score']);
 	$stmt->execute();
 	$stmt->close();
-	echo "Score Accepted";
+	echo "Score Accepted".$_POST['name'].$_POST['score'];
 }
 else{
 	echo "Oops, something went wrong!";
