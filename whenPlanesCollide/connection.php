@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET'){ //RETRIEVE SCORES
 }
 elseif($_SERVER['REQUEST_METHOD'] == 'POST'){ //SET HIGHSCORE
 	$stmt = $mysqli->prepare('INSERT INTO HighScores (Name, Score, Time) VALUES (?,?,NOW())');
-	$stmt->bind_param('ss', $_POST['name'], $_POST['score']);
+	$stmt->bind_param('si', $_POST['name'], $_POST['score']);
 	$stmt->execute();
 	$stmt->close();
 	echo "Score Accepted".$_POST['name'].$_POST['score'];
