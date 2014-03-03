@@ -25,10 +25,10 @@ elseif($_SERVER['REQUEST_METHOD'] == 'POST'){ //SET HIGHSCORE
 	$stmt->bind_param('si', $_POST['name'], $_POST['score']);
 	$stmt->execute();
 	$stmt->close();
-	echo "Score Accepted:".$_POST['name'].":".$_POST['score'];
+	echo "ACK";
 }
 else{
-	echo "Oops, something went wrong!";
+	echo "NEG";
 }
 
 mysqli_close($mysqli);
