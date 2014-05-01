@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET'){ //RETRIEVE SCORES
 	if($result->num_rows > 0) {
 		while($row = $result->fetch_assoc()) {
 		// Print out the contents of each row
-		echo $row['Name'].":".$row['Score']."\n";
+		echo $row['Name']."^%:^%".$row['Score']."\n";
 		}
 	}
 }
